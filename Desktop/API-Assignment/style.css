@@ -1,0 +1,62 @@
+.header{
+    display: grid;
+    background:url(./img/pexels-pixabay-534216.jpg);
+    image-resolution: 100%;
+    background-size: cover;
+    background-color: gray;
+    background-blend-mode: multiply;
+    color: white;
+    border: 1px solid black;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "title"
+    "menu";
+}
+
+.header>h1{
+    grid-area: title;
+    font-size:xx-large;
+    justify-self: center;
+}
+
+.list{
+    grid-area: menu;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.list>li{
+    background-color: green;
+    border: 1px solid black;
+    border-radius: .75em;
+    padding: 0%;
+    /* padding: .5em;
+    padding-left: 6em;
+    padding-right: 1em; */
+    margin-right: 5.5em;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+}
+
+.content{
+    display: flex;
+    background-color:chocolate;
+    /* padding-top: 30rem; */
+}
+
+.button{
+    border: 1px solid black;
+    background-color:yellow;
+}
+
+@media only screen and (max-width: 1200px){
+
+body{
+    width: max-content;
+}
+}
